@@ -144,7 +144,7 @@ def Simple():
 
             tracks = []
             for uri in uris:
-                track = """<iframe src="https://open.spotify.com/embed/track/{}" width="260" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>""".format(uri)
+                track = """<iframe style=border-radius:12px src="https://open.spotify.com/embed/track/{}" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>""".format(uri)
                 tracks.append(track)
 
             if 'previous_inputs' not in st.session_state:
