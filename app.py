@@ -173,29 +173,15 @@ def Simple():
                             with col1:
                                 components.html(
                                     track,
-                                    height=400,
                                 )
-                                with st.expander("See more details"):
-                                    df = pd.DataFrame(dict(
-                                    r=audio[:5],
-                                    theta=audio_feats[:5]))
-                                    fig = px.line_polar(df, r='r', theta='theta', line_close=True)
-                                    fig.update_layout(height=400, width=340)
-                                    st.plotly_chart(fig)
+                                
                     
                         else:
                             with col3:
                                 components.html(
                                     track,
-                                    height=400,
                                 )
-                                with st.expander("See more details"):
-                                    df = pd.DataFrame(dict(
-                                        r=audio[:5],
-                                        theta=audio_feats[:5]))
-                                    fig = px.line_polar(df, r='r', theta='theta', line_close=True)
-                                    fig.update_layout(height=400, width=340)
-                                    st.plotly_chart(fig)
+                                
 
                 else:
                     st.write("No songs left to recommend")
